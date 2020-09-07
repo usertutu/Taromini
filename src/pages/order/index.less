@@ -1,0 +1,98 @@
+@import '../../utils/variables.less';
+page {
+  background-color: #fafdfb;
+}
+.index {
+  overflow: hidden;
+  position: relative;
+  .main {
+    //扫一扫浮动按钮
+    .scan {
+      position: fixed;
+      left: 570px;
+      top: 65%;
+      z-index: 666;
+      image {
+        width: 205px;
+        height: 210px;
+        opacity: 0.6;
+      }
+    }
+
+    .msg {
+      width: 100%;
+      height: 700px;
+      color: #ccc;
+      font-size: 30px;
+      margin-top: 50px;
+      text-align: center;
+    }
+    .at-tabs__item--active,
+    .at-tabs__item--active {
+      color: rgb(4, 178, 169);
+    }
+    .at-tabs__item-underline {
+      background-color: rgb(4, 178, 169);
+    }
+  }
+
+  //购物车页面底部留空
+  .bottom {
+    margin-bottom: 105px;
+  }
+
+  //购物车商品结算栏
+  .total {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid whitesmoke;
+    background-color: #fff;
+    z-index: 668;
+    .total-check {
+      margin-left: 30px;
+      width: 155px;
+      vertical-align: middle;
+      position: relative;
+      .total-check-pic {
+        display: inline-block;
+        margin-top: 20px;
+        image {
+          margin-top: 30px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .total-check-text {
+        position: absolute;
+        left: 45px;
+        top: 27px;
+        display: inline-block;
+        font-size: 35px;
+        margin-left: 10px;
+        color: rgb(158, 158, 158);
+      }
+    }
+    .totalMoney {
+      flex: 1;
+      line-height: 105px;
+      color: red;
+      text-align: left;
+      font-size: 38px;
+      padding-left: 30px;
+      box-sizing: border-box;
+    }
+    .totalPay {
+      margin: 12px 20px 0 50px;
+      width: 250px;
+      height: 80px;
+      line-height: 80px;
+      color: #fff;
+      background-color: rgb(0, 196, 176);
+      border-radius: 50px;
+    }
+  }
+}

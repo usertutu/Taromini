@@ -1,0 +1,142 @@
+.index {
+  padding: 0 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  margin-top: 50px;
+  .notice {
+    line-height: 35px;
+    font-size: 25px;
+    color: #ccc;
+  }
+
+  .changeBox {
+    height: 300px;
+    .change {
+      display: flex;
+      height: 120px;
+      border-bottom: 1px solid #ccc;
+      font-size: 30px;
+      .title {
+        line-height: 100px;
+      }
+      .phoneNum {
+        flex: 1;
+        line-height: 100px;
+        text-align: right;
+        color: #ccc;
+      }
+      .iconR {
+        text-align: right;
+        width: 50px;
+        line-height: 100px;
+        color: #ccc;
+      }
+    }
+    .gotohome {
+      width: 750px;
+      line-height: 80px;
+      background-color: #00c4b0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 35px;
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .main {
+    .del {
+      image {
+        margin-top: 200px;
+        margin-left: 280px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .bindPhone {
+      margin-top: 30px;
+      text-align: center;
+      .text1 {
+        font-size: 40px;
+        color: rgb(0, 196, 176);
+      }
+      .text2 {
+        margin-top: 20px;
+        font-size: 30px;
+        color: #ccc;
+      }
+      image {
+        margin-top: 100px;
+        width: 400px;
+        height: 200px;
+        animation: htMove 2s linear 10;
+      }
+      @keyframes htMove {
+        0% {
+          transform: scaleX(0.8) scaleY(0.8);
+        }
+        50% {
+          transform: scaleX(1) scaleY(1);
+        }
+        100% {
+          transform: scaleX(0.8) scaleY(0.8);
+        }
+      }
+      button {
+        margin-top: 100px;
+        background-color: rgb(0, 196, 176);
+        border-radius: 50px;
+        color: white;
+      }
+    }
+
+    //输入框样式
+    .text {
+      font-size: 34px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 30px;
+      .butStyle {
+        background-color: #fff;
+        border-color: #fff;
+      }
+      .at-button--primary {
+        color: rgb(0, 196, 176);
+      }
+    }
+    .at-input {
+      margin-left: unset;
+    }
+    .at-input::after {
+      border-bottom-width: 0px;
+    }
+
+    .at-input__title {
+      width: 110px;
+    }
+
+    .at-input__children::after {
+      border-left: unset;
+      color: #000;
+    }
+
+    //按钮样式
+    .butStyle {
+      background-color: rgb(0, 196, 176);
+      border-color: rgb(0, 196, 176);
+      border-radius: 50px;
+    }
+
+    //提交按钮
+    .submit {
+      margin-top: 30px;
+    }
+
+    //获取验证码按钮
+    .gitNum {
+      margin-left: 15px;
+    }
+  }
+}

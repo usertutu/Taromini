@@ -1,0 +1,181 @@
+.index {
+  padding: 0 27px;
+  box-sizing: border-box;
+  overflow: hidden;
+  .main {
+    text-align: center;
+
+    button {
+      border: unset;
+      background-color: unset;
+      padding: unset;
+      outline: unset;
+    }
+    button::after {
+      border: unset;
+    }
+
+    // 顶部用户信息
+    .userInfo {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      //用户头像
+      .userPic {
+        width: 150px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .pic {
+          width: 128px;
+          height: 128px;
+          background-color: #eeedea;
+          border-radius: 64px;
+          overflow: hidden;
+        }
+      }
+      //用户信息（名称与手机号）
+      .userMsg {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        margin-left: 30px;
+        .userName {
+          line-height: 90px;
+          font-size: 40px;
+          font-weight: 600;
+          width: 400px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          transform: translateY(30px);
+        }
+        .userNumber {
+          image {
+            width: 23px;
+            height: 28px;
+            margin-right: 10px;
+          }
+          width: 100%;
+          line-height: 90px;
+          font-size: 32px;
+          color: #5a5a5a;
+        }
+        .phone {
+          font-size: 22px;
+        }
+      }
+    }
+
+    //广告
+    .show {
+      width: 700px;
+      height: 150px;
+      margin: 30px 0 30px 0;
+      image {
+        width: 100%;
+        height: 150px;
+      }
+    }
+    .order {
+      margin-top: 50px;
+      width: 700px;
+      border-radius: 14px;
+      box-sizing: border-box;
+      padding: 10px 27px;
+      box-shadow: 0px 5px 15px 0px rgba(6, 131, 131, 0.11);
+      box-sizing: border-box;
+      .title {
+        // width: 700px;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .left_tip {
+          font-size: 36px;
+        }
+        .right_tip {
+          text-align: end;
+          .iconR {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+      .classification {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        // padding: 20px 0;
+        background-color: #fff;
+        image {
+          width: 64px;
+          height: 64px;
+        }
+        .title {
+          font-size: 28px;
+          color: '#484848';
+        }
+      }
+    }
+
+    //我的服务
+    .myServe {
+      width: 700px;
+      padding-left: 22px;
+      box-sizing: border-box;
+      //服务标题
+      .dt {
+        width: 100%;
+        line-height: 120px;
+        font-size: 40px;
+        font-weight: 400;
+        display: block;
+        text-align: left;
+      }
+
+      //服务选项
+      .dd {
+        width: 100%;
+        line-height: 100px;
+        font-size: 30px;
+        text-align: left;
+        border-bottom: 1px soild #ccc;
+        position: relative;
+        display: flex;
+        align-items: center;
+        image {
+          width: 36px;
+          height: 33px;
+          margin-right: 10px;
+        }
+        .num {
+          font-size: 20px;
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .serveR {
+          .iconR {
+            width: 12px;
+            height: 22px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          .text {
+            position: absolute;
+            right: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+}

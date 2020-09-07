@@ -1,0 +1,245 @@
+.index{  
+    .main{
+        overflow: hidden;
+     
+        //活动title
+        .activityTitle{
+            width: 100%;
+            height: 900px;
+            background-color:  rgb(250, 78, 75);
+
+            //顶部公告与规则
+            .titleTop{
+                height: 85px;
+                display: flex;
+                .notice{
+                    width: 65%;
+                    
+                    .gitText{
+                        width: 450px;
+                        height: 45px;
+                        background-color: rgba(0,0,0,0.5);
+                        font-size: 23px;
+                        color: white;
+                        text-align: center;
+                        margin: 20px 0 0 20px;
+                        border-radius: 50px;
+                        overflow: hidden;
+                        padding-top: 6px;
+                        box-sizing: border-box;
+                    }
+                }
+                .guide{
+                    width: 35%;
+                    
+                    .text{
+                        width: 150px;
+                        line-height: 45px;
+                        background-color: rgb(255, 197, 201);
+                        font-size: 23px;
+                        color: rgb(255, 72, 88);
+                        text-align: center;
+                        border-radius: 50px;
+                        float: right;
+                        margin: 20px -15px 0 0;
+                    }
+                }
+            }
+
+            //中间内容项
+            .titleCenter{
+                height: 620px;
+                background-color: rgb(250, 78, 75);
+                overflow: hidden;
+                position: relative;
+                Image{
+                    width: 100%;
+                    height: 510px;
+                    position: absolute;
+                }
+                .o{
+                    width: 1100px;
+                    height: 1100px;
+                    border: 25px solid rgb(255, 215, 116);
+                    border-radius: 1100px;
+                    position: absolute;
+                    top: -540px;
+                    left: -195px;
+                    overflow: hidden;
+                    z-index: 10;
+                    text-align: center;
+                    .centerInfo{
+                        width: 650px;
+                        height: 430px;
+                        background: linear-gradient(to bottom, rgb(253, 252, 250), rgb(249, 235, 222));
+                        border-radius: 30px;
+                        position: absolute;
+                        z-index: 2;
+                        left: 220px;
+                        bottom: -10px;
+                        .text1{
+                            font-size: 35px;
+                            color: rgb( 218, 194, 131);
+                            margin-top: 80px;
+                            
+                        }
+                        .text2{
+                            margin-top: -30px;
+                            font-size: 105px;
+                            font-weight: 500;
+                            color: rgb( 218, 194, 131);
+                               
+                            .text3
+                            {
+                                font-size: 200px;
+                                font-weight: 700;
+                                color: rgb(250, 78, 75);     
+                                
+                            }
+
+                        }
+                    }
+
+                }
+                .centerTitle{
+                    font-size: 80px;
+                    font-weight: 700;
+                    color: white;
+                    position: absolute;
+                    z-index: 2;
+                    left: 125px;
+                    margin-top: 20px;
+                    
+                }
+            }
+
+            //分享按钮
+            .titleBottom{
+                height: 205px;
+                background-color: rgb(250, 78, 75);
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                .share{
+                    width: 360px;
+                    line-height: 75px;
+                    text-align: center;
+                    border-radius: 40px;
+                    background-color: rgb(255, 220, 120);
+                    color: rgb(250, 78, 75);
+                }
+                .shareBox{
+                    text-align: center;
+                    .at-float-layout__container{
+                        min-height:100px;
+                        max-height:350px;
+                    }
+                    .mode{
+                        width: 500px;
+                        height: 100px;
+                        margin-left: 100px;
+                        margin-top: 100px;
+                        Button{
+                            width: 100px;
+                            height: 100px;
+                            display: inline-block;
+                            padding: unset;
+                        }
+                        Image{
+                            width: 100px;
+                            height: 100px;    
+                        }
+                        .twocode{
+                            margin-left: 120px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        //活动信息
+        .activityInfo{
+            width: 100%;
+            height: 1000px;
+            background: linear-gradient(to bottom, rgb(250, 78, 75), rgb(255, 60, 76));
+            
+            //邀请攻略
+            .strategy{
+                width: 700px;
+                height: 370px;
+                background-color: white;
+                margin-left: 25px;
+                border-radius: 30px;
+                overflow: hidden;
+                Image{
+                    width: 700px;
+                    height: 370px;
+                }
+            }
+
+            //我的邀请红包
+            .mine{
+                margin-top: 50px;
+                width: 700px;
+                height: 500px;
+                background-color: white;
+                margin-left: 25px;
+                border-radius: 30px;
+                background: linear-gradient(to bottom, rgb(253, 252, 250), rgb(249, 235, 222));
+                
+                //邀请标题
+                .title{
+                    height: 110px;
+                    display: flex;
+                    justify-content:center;
+                    align-items:center;
+                    Image{
+                        width: 350px;
+                        height: 45px;
+                    }
+                }
+
+                //邀请所得奖励
+                .gain{
+                    height: 110px;
+                    display: flex;
+                    .wait{
+                        font-size: 28px;
+                        text-align: center;
+                        padding-top: 20px;
+                        box-sizing: border-box;
+                        width: 50%;
+                        border-right:  1PX solid #ccc;
+                        .money{
+                            color: red;
+                        }
+                        .text{
+                            font-weight: 200;
+                        }
+                    }
+                    .get{
+                        border-right:  unset !important; 
+                    }
+                }
+
+                //邀请记录
+                .gainRecord{
+                    height: 280px;
+                    text-align: center;
+                    padding-top: 50px;
+                    box-sizing: border-box;
+                    Image{
+                        width: 190px;
+                        height: 100px;
+                    }
+                    .gainRecordText{
+                        margin-top: 20px;
+                        font-size: 20px;
+                        color: rgb(153, 153, 153);
+                    }       
+                }
+            }
+        }
+    }
+}
